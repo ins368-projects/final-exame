@@ -6,12 +6,15 @@ namespace PotentiationFinalExam.Tests
 {
     public class UnitTest1
     {
-        [Fact]
-        public void NumberInIntegerRange_PowIsCorrect()
+        [Theory]
+        [InlineData(2, 3, 8)]
+        [InlineData(-100, 2, 10000)]
+        [InlineData(-4, -5, -0.0009765625)]
+        [InlineData(10, -2, 0.01)]
+        public void NumberInDoubleRange_PowIsCorrect(double a, double b, double expectedResult)
         {
-            double result = Powlib.Pow(2, 6);
-
-            Assert.True(result == 64, "3 to the power pof 2 should be 9");
+            double result = Powlib.Pow(a, b);
+            Assert.True(result == expectedResult, $"Number {a} to the power of {b} is quals to {expectedResult} is true");
         }
     }
 }
