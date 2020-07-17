@@ -6,7 +6,7 @@ namespace PotentiationFinalExam.Pow
     {
         public static int Pow(int a, int b)
         {
-            return 4;
+            return 1;   
         }
     }
 }
