@@ -16,5 +16,20 @@ namespace PotentiationFinalExam.Tests
             double result = Powlib.Pow(a, b);
             Assert.True(result == expectedResult, $"Number {a} to the power of {b} is quals to {expectedResult} is true");
         }
+
+        [Fact]
+        public void NumberIsNotInDoubleRange()
+        {
+            double maxValue = double.MaxValue; 
+            
+            try
+            {
+                double result = Powlib.Pow(maxValue, 3);
+            }
+            catch(Exception e)
+            {
+                Assert.False(e.Message == "Número está fuera de rango positivo");
+            }
+        }
     }
 }
