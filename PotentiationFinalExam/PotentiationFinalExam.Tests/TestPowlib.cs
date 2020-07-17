@@ -11,7 +11,7 @@ namespace PotentiationFinalExam.Tests
         [Fact]
         public void TwoTothePowerOfTwo_ReturnFour()
         {
-            var result = _powLib.Pow(2, 2);
+            int result = _powlib.Pow(2, 2);
         }
     }
 }
