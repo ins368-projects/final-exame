@@ -6,12 +6,12 @@ namespace PotentiationFinalExam.Tests
 {
     public class UnitTest1
     {
-        readonly Powlib _powlib;
-
         [Fact]
-        public void TwoTothePowerOfTwo_ReturnFour()
+        public void NumberInIntegerRange_PowIsCorrect()
         {
-            int result = _powlib.Pow(2, 2);
+            int result = Powlib.Pow(2, 2);
+
+            Assert.True(result == 4, "2 to the power pof 2 should be 4");
         }
     }
 }
