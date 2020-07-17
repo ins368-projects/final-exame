@@ -9,9 +9,9 @@ namespace PotentiationFinalExam.Tests
         readonly Powlib _powlib;
 
         [Fact]
-        public void Test1()
+        public void PowRe()
         {
-
+            
         }
     }
 }

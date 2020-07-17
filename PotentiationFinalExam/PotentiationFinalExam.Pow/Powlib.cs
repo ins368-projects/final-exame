@@ -2,7 +2,7 @@
 
 namespace PotentiationFinalExam.Pow
 {
-    public class TestPow
+    public class Powlib
     {
         
     }
