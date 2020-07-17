@@ -9,9 +9,9 @@ namespace PotentiationFinalExam.Tests
         [Fact]
         public void NumberInIntegerRange_PowIsCorrect()
         {
-            int result = Powlib.Pow(1, 2);
+            int result = Powlib.Pow(3, 2);
 
-            Assert.True(result == 1, "1 to the power pof 2 should be 1");
+            Assert.True(result == 9, "3 to the power pof 2 should be 9");
         }
     }
 }
