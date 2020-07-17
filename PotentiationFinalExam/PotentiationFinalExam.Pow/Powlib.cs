@@ -6,7 +6,13 @@ namespace PotentiationFinalExam.Pow
     {
         public static double Pow(double a, double b)
         {
-            return Math.Pow(a, b);
+            double maxValue = double.MaxValue;
+            double result = Math.Pow(a, b);
+
+            if(Double.IsInfinity(result))
+                throw new System.InvalidOperationException("");
+            
+            return result;
         }
     }
 }

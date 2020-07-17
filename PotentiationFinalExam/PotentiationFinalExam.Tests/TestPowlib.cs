@@ -18,6 +18,7 @@ namespace PotentiationFinalExam.Tests
         }
 
         [Fact]
+  
         public void NumberIsNotInDoubleRange()
         {
             double maxValue = double.MaxValue; 
