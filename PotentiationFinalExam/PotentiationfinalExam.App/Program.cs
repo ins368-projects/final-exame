@@ -16,8 +16,15 @@ namespace PotentiationfinalExam.App
             Write("Digite segundo número: ");
             var number2 = Double.Parse(ReadLine());
 
-            double result = Powlib.Pow(number1, number2);
-            WriteLine($"\nResultado: {result}");
+            try
+            {
+                double result = Powlib.Pow(number1, number2);
+                WriteLine($"\nResultado: {result}");
+            }
+            catch(Exception e)
+            {
+                WriteLine($"\n{e.Message}");
+            }
         }
     }
 }
