@@ -10,7 +10,7 @@ namespace PotentiationFinalExam.Pow
             double result = Math.Pow(a, b);
 
             if(Double.IsInfinity(result))
-                throw new System.InvalidOperationException("El número está más arriba que el permitido");
+                throw new System.InvalidOperationException("Número está fuera de rango positivo");
             
             return result;
         }
