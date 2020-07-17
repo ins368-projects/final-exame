@@ -9,9 +9,9 @@ namespace PotentiationFinalExam.Tests
         readonly Powlib _powlib;
 
         [Fact]
-        public void PowRe()
+        public void TwoTothePowerOfTwo_ReturnFour()
         {
-            
+            var result = _powLib.Pow(2, 2);
         }
     }
 }
