@@ -20,7 +20,8 @@ namespace PotentiationFinalExam.Tests
         [Theory]
         [InlineData(double.MaxValue, 100, "Número está fuera de rango positivo")]
         [InlineData(double.MaxValue, 3, "Número está fuera de rango positivo")]
-
+        [InlineData(double.MinValue, 100, "Número está fuera de rango negativo")]
+        [InlineData(double.MinValue, 3, "Número está fuera de rango negativo")]
         public void NumberIsNotInDoubleRange(double a, double b, string expectedResult)
         {
             double maxValue = double.MaxValue; 
@@ -31,7 +32,7 @@ namespace PotentiationFinalExam.Tests
             }
             catch(Exception e)
             {
-                Assert.False(e.Message == expectedResult);
+                Assert.True(e.Message == expectedResult);
             }
         }
     }
