@@ -4,9 +4,9 @@ namespace PotentiationFinalExam.Pow
 {
     public class Powlib
     {
-        public static int Pow(int a, int b)
+        public static double Pow(double a, double b)
         {
-            return 1;   
+            return Math.Pow(a, b);
         }
     }
 }
